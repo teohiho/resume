@@ -1,0 +1,414 @@
+@import './modules/config.scss';
+@import './modules/mixins.scss';
+@import './modules/common.scss';
+@import './modules/reset.scss';
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    touch-action: manipulation;
+    box-sizing: border-box;
+}
+[data-theme="light"] {
+	--COLOR_MAIN: #FFFFFF;
+	--COLOR_BG: #9A9A9A;
+	--COLOR_HEADER: #AAAA55;
+	--COLOR_LINK: #AAAA55;
+	--COLOR_TEXT: #172735;
+	--COLOR_SHADOW: rgba($COLOR_TEXT,0.1);
+	--COLOR_TURN: #AAAA55;
+	--COLOR_BORDER: #F1F1F1;
+	--COLOR_ICON: #c7c7c7; 
+
+	--COLOR_DARK_MAIN: #000000;
+	--COLOR_DARK_BG: #9A9A9A;
+	--COLOR_DARK_HEADER: #AAAA55;
+	--COLOR_DARK_LINK: #AAAA55;
+	--COLOR_DARK_TEXT: #ffffff;
+	--COLOR_DARK_SHADOW: rgba($COLOR_TEXT,0.1);
+	--COLOR_DARK_TURN: #AAAA55;
+	--COLOR_DARK_BORDER: #F1F1F1;
+	--COLOR_DARK_ICON: #c7c7c7; 
+}
+
+[data-theme="dark"] {
+	--COLOR_MAIN:#172735;
+	--COLOR_BG: #9A9A9A;
+	--COLOR_HEADER: #AAAA55;
+	--COLOR_LINK: #AAAA55;
+	--COLOR_TEXT: #ffffff;
+	--COLOR_SHADOW: rgba($COLOR_TEXT,0.1);
+	--COLOR_TURN: #AAAA55;
+	--COLOR_BORDER: #F1F1F1;
+	--COLOR_ICON: #c7c7c7; 
+  
+	--COLOR_DARK_MAIN: #000000;
+	--COLOR_DARK_BG: #9A9A9A;
+	--COLOR_DARK_HEADER: #AAAA55;
+	--COLOR_DARK_LINK: #AAAA55;
+	--COLOR_DARK_TEXT: #ffffff;
+	--COLOR_DARK_SHADOW: rgba($COLOR_TEXT,0.1);
+	--COLOR_DARK_TURN: #AAAA55;
+	--COLOR_DARK_BORDER: #F1F1F1;
+	--COLOR_DARK_ICON: #c7c7c7; 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    //@include font-gothic;
+	@include georgia;
+    font-size: 20px;
+    background-color: $COLOR_BG;
+    color: $COLOR_TEXT;
+}
+h1,p{margin:0 0 1em}
+
+a {
+	color: inherit;
+    text-decoration: none;
+    //color: $COLOR_LINK;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+i {
+	color: $COLOR_ICON;
+	margin-right: 0.75em;
+}
+
+input {
+    outline: none;
+}
+
+select {
+	font-family: 'FontAwesome', 'Second Font name'
+}
+
+.inside {
+	list-style-type: initial;
+	list-style-position: inside;
+}
+
+.circle {
+	list-style-type: circle;
+	padding-left: 2em;
+}
+
+.text-sm {
+	font-size: 0.75rem;
+}
+
+#app {
+    //overflow-x: hidden;
+		font-size: 0.875rem;
+}
+
+$c_name: '.page';
+#{$c_name} {
+    &__inner {
+			margin: auto;
+			max-width: $VIEW_WIDTH;
+			min-height: 100vh;
+			line-height: 1.25rem;
+			background-color: $COLOR_MAIN;
+    }
+}
+
+/* HEADER */
+$c_name: '.header';
+#{$c_name} {
+	position: fixed;
+	left: 0;
+  top: 0;
+	z-index: 100;
+	width: 100%;
+	
+	
+	&__inner {
+		display: flex;
+  	justify-content: space-between;
+		overflow: hidden;
+		padding: 0.375rem 3.125rem;
+		background-color: $COLOR_HEADER;
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+	}
+
+	&__left {
+		// float: left;
+	}
+
+	&__right {
+		// float: right;
+		display: flex;
+		position: relative;
+		transform: translateY(25%);
+	}
+
+	&__logo {
+		img {
+			width: 35px;
+		}
+	}
+
+	&__lang {
+		margin-right: 1rem;
+	}
+
+	&__theme {
+		
+	}
+}
+
+
+/* BODY */
+$c_name: '.body';
+#{$c_name} {
+	padding: 5rem 1.2rem 1rem;
+    &__container {
+        
+    }
+}
+
+$c_name: '.info';
+#{$c_name} {
+	padding-bottom: 2em;
+
+	&__name {
+		b {
+			font-size: 1.875em;
+			text-transform: uppercase;
+		}
+	}
+
+	&__job {
+		b {
+			font-size: 1.25rem;
+			color: $COLOR_TURN;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		
+		
+		&--item {
+			&:not(:last-child) {
+				margin-right: 3em;
+			}
+		}
+
+		
+
+		&--mail {
+		
+		}
+
+		&--github {
+		
+		}
+	}
+	&__description {
+		
+	}
+
+}
+
+$c_name: '.cv';
+#{$c_name} {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+
+	&__col {
+		flex-grow: 4;
+	}
+
+	&__item {
+		padding-bottom: 2em;
+	}
+
+	&__right {
+		width: 61%;
+	}
+
+	&__center {
+		width: 5%;
+	}
+
+	&__left {
+		width: 34%;
+	}
+
+	&__experience {
+		
+	}
+
+	&__skills {
+		
+	}
+
+	&__education {
+
+	}
+
+	&__title {
+		font-size: 1.25rem;
+		line-height: 1.2em;
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+    	border-bottom: 2px solid transparent;
+		border-image: linear-gradient(to right, grey 0%, white 100%);
+    	border-image-slice: 1;
+	}
+
+}
+
+$c_name: '.experience';
+#{$c_name} {
+	&__position {
+		font-size: 1.25rem;
+	}
+
+	&__company {
+		color: $COLOR_TURN;
+		font-size: 1rem;
+		
+	}
+
+	&__detail {
+		
+	}
+
+	&__detail-item {
+		&__time {
+			float: left;
+			margin-right: 8em;
+		}
+
+		&__location {
+		
+		}
+
+		&__work {
+			ul {
+				list-style-type: initial;
+				padding-left: 2em;
+			}
+		}
+		.technology {
+			span {
+			}
+		}
+	}
+
+}
+
+
+
+/* FOOTER */
+$c_name: '.footer';
+#{$c_name} {
+
+}
+
+.text {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+@media print {
+	.header {
+		//display:none;
+		visibility: hidden;
+	}
+	.body {
+		margin-top: -2em;
+	}
+  }
+//   @media screen {
+// 	 .onlyPrint {
+// 		 display: none;
+// 	 }
+//   }
+
+/* KEYFRAMES */
+@keyframes identifier {
+	0% {
+
+	}
+	100% {
+
+	}
+}
+
+/* Transitions and Animations */
+.fade-leave-active {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+}
+
+.fade-enter-active {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    transition-delay: 0.5s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-to, .fade-leave {
+    opacity: 1;
+}
+
+.test {
+	opacity: 0;
+transition: opacity 0.5s ease-in-out;
+}
+
+
+/* Loading */
+$c_name: '.loading';
+#{$c_name} {
+	font-family: "Lucida Console", "Courier New", monospace;
+	position: absolute;
+    z-index: 1000;
+    background-color: $COLOR_TEXT;
+    height: 100vh;
+    width: 100vw;
+
+	&-img {
+		color: $COLOR_MAIN;
+		margin: 0 auto;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		img {
+			width: 70px;
+		}
+	}
+}
+
+/* Z*/
+.zoom-in-box {
+	animation: zoom-in-zoom-out 2.5s ease infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+	0% {
+		transform: scale(0.7, 0.7);
+	  }
+	  50% {
+		transform: scale(1, 1);
+	  }
+	  100% {
+		transform: scale(0.7, 0.7);
+	  }
+  }

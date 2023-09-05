@@ -18491,7 +18491,7 @@ var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"cv__content\"><ul class=\"\"><li><span class=\"fw-b\">Education</span><ul class=\"inside\"><li>Danang University of Science and Technology</li></ul></li><li class=\"pt-10\"><span class=\"fw-b\">Certificate</span><ul class=\"inside\"><li>Japanese-Language Proficiency Test N2 Certificate (JLPT N2)</li></ul></li></ul></div>", 1);
 var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("link", {
   rel: "stylesheet",
-  href: "css/app.css"
+  href: "../../../css/app.css"
 }, null, -1 /* HOISTED */);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {

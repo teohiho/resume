@@ -1,13 +1,28 @@
 import * as vueRouter from "vue-router";
+import Home from "../pages/Home.vue"
 import Resume from "../pages/Resume.vue"
+import Basic from "../pages/Basic.vue"
 
 const routes = [
   {
-    name: "Resume",
+    name: "Home",
     path: "/",
+    component: Home,
+    meta: {title: '[EN] Resume'}
+  },
+  {
+    name: "Resume",
+    path: "/1119",
     component: Resume,
     meta: {title: '[EN] Resume'}
-  }
+  },
+  {
+    name: "Basic",
+    path: "/basic",
+    component: Basic,
+    meta: {title: 'Teo | Basic Info'}
+  },
+
 ];
 
 const router = vueRouter.createRouter({

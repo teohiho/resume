@@ -7,7 +7,7 @@
 						<Appear :delay="200" :transition="['100px', 0]" >
 							<!-- <b>H o &nbsp; T h i &nbsp; T h u &nbsp; H i e n</b>
 							 -->
-							 <b> {{ addSpace(en.name) }} </b>
+							 <b>H I E N &nbsp; H O</b>
 						</Appear>
 					</div>
 					<div class="info__job">
@@ -32,7 +32,11 @@
 						</a>
 					</div>
 					<div class="info__description pt-10">
-						I'm Ho Thi Thu Hien, a software developer with 2 years of experience in web development. I specialize in creating a website and creating user-friendly interfaces using C#, SCSS, JavaScript, and Vue.
+						I'm Hien (my nickname is Teo), a software developer with 2 years of experience in web development. I specialize in creating a website and creating user-friendly interfaces using C#, SCSS, JavaScript, and Vue.
+						Recently I am learning more languages like Python. <br><br>
+						I am Vietnamese but currently I live in Japan. I'm trying to find new fun things, and especially looking for more friends. Nice to meet you ^o^
+						<br><br>
+						This is my basic information!
 					</div>
 				</div>
 				<div class="cv">
@@ -46,12 +50,12 @@
 							<div class="cv__content">
 								<div class="experience">
 									<div class="experience__position">Software Engineer</div>
-									<div class="experience__company">Nihon System</div>
+									<!-- <div class="experience__company">Nihon System</div> -->
 									<div class="experience__detail">
 										<div class="experience__detail-item ">
 											<div class="experience__detail-item__time text-sm">
 												<i class="fa-solid fa-calendar-days"></i>
-												March 2022 - Current
+												2022 - Current
 											</div>
 											<div class="experience__detail-item__location text-sm">
 												<i class="fa-solid fa-location-dot"></i>
@@ -59,15 +63,13 @@
 											</div>
 											<div style="clear:both;"></div>
 											<div class="experience__detail-item__work">
-												<p class="pt-10">This is a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p>
+												<p class="pt-10">Working for a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p>
 												<ul>
-													<li>Maintenance and adding new features to the available web app are requested from customers</li>
-													<li>I was responsible for designing the user interface using Adobe XD, and collaborating with experienced people to ensure clear and effective design,developing new pages, ensuring perfect pixel accuracy.</li>
-													<li>I also developed a web app for the project using Vuejs.</li>
-													<li>Maintenance and adding new features to the Windows Forms project</li>
 												</ul>
 												<div class="technology pt-10">
 													<span class="fw-b">Technology:</span> ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, HTML, SCSS, CSS
+													<br>
+													<span class="fw-b">Prototyping tool:</span> Adobe XD
 												</div>
 											</div>
 										</div>
@@ -78,7 +80,7 @@
 					</div>
 					<div class="cv__col cv__center"></div>
 					<div class="cv__col cv__left">
-						<div class="cv__item cv__skills">
+						<!-- <div class="cv__item cv__skills">
 							<div class="cv__title">
 								<Appear :delay="200" :transition="['100px', 0]" >
 									<span>S K I L L S</span>
@@ -87,7 +89,7 @@
 							<div class="cv__content">
 								ASP.NET, Javascript, Vuejs, SCSS,..
 							</div>
-						</div>
+						</div> -->
 						<div class="cv__item cv__education">
 							<div class="cv__title">
 								<Appear :delay="200" :transition="['100px', 0]" >
@@ -99,13 +101,13 @@
 									<li>
 										<span class="fw-b">Education</span>
 										<ul class="inside">
-											<li>2015 - 2020: Danang University of Science and Technology</li>
+											<li>Danang University of Science and Technology</li>
 										</ul>
 									</li>
 									<li class="pt-10">
 										<span class="fw-b">Certificate</span>
 										<ul class="inside">
-											<li>8/2022: Japanese-Language Proficiency Test N2 Certificate</li>
+											<li>Japanese-Language Proficiency Test N2 Certificate (JLPT N2)</li>
 										</ul>
 									</li>
 								</ul>

@@ -26,7 +26,7 @@
 							<i class="fa-solid fa-envelope"></i>
 							{{ en.contacts.text }}
 						</a>
-						<a class="info__contacts--item info__contacts--github" href="https://github.com/teohiho">
+						<a class="info__contacts--item info__contacts--github" href="">
 							<i class="fa-brands fa-github"></i>
 							{{ en.contacts.link }}
 						</a>
@@ -37,6 +37,7 @@
 						I am Vietnamese but currently I live in Japan. I'm trying to find new fun things, and especially looking for more friends. Nice to meet you ^o^
 						<br><br>
 						This is my basic information!
+						<br><small style="font-size: 14px"> (Please <b>open this link in your browser</b>, it will look better on Instagram.)</small>
 					</div>
 				</div>
 				<div class="cv">
@@ -111,7 +112,6 @@
 										</ul>
 									</li>
 								</ul>
-								
 							</div>
 						</div>
 					</div>

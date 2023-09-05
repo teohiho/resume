@@ -8,3 +8,7 @@ const app = createApp(App)
   .use(VueRouter);
   
   app.mount("#app");
+
+  const cors = require('cors');
+  // Enable CORS for all routes
+  app.use(cors());

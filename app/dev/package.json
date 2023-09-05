@@ -25,5 +25,8 @@
     "vue-loader": "^17.0.1",
     "vue-router": "^4.1.6",
     "vuex": "^4.1.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
   }
 }

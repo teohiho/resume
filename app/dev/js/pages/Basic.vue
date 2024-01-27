@@ -33,11 +33,14 @@
 					</div>
 					<div class="info__description pt-10">
 						I'm Hien (my nickname is Teo), a software developer with 2 years of experience in web development. I specialize in creating a website and creating user-friendly interfaces using C#, SCSS, JavaScript, and Vue.
-						Recently I am learning more languages like Python. <br><br>
-						I am Vietnamese but currently I live in Japan. I'm trying to find new fun things, and especially looking for more friends. Nice to meet you ^o^
 						<br><br>
-						This is my basic information!
-						<br><small style="font-size: 14px"> (Please <b>open this link in your browser</b>, it will look better on Instagram.)</small>
+						I am Vietnamese but currently I live in Japan. I'm trying to find new fun things, and especially looking for more friends. Nice to meet you ^o^
+						<br>
+						<br>
+						<small style="font-size: 14px">
+							<a style="text-decoration: underline;
+							color: cadetblue;">This is basic information that can be made public. Please contact me if you want my detailed CV. uwu</a>
+						</small>
 					</div>
 				</div>
 				<div class="cv">
@@ -65,12 +68,13 @@
 											<div style="clear:both;"></div>
 											<div class="experience__detail-item__work">
 												<p class="pt-10">Working for a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p>
+												<p>We create web app products, winforms applications that provide tools to meet customer needs such as in the logistics industry, order management, invoices...</p>
 												<ul>
 												</ul>
 												<div class="technology pt-10">
-													<span class="fw-b">Technology:</span> ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, HTML, SCSS, CSS
+													<span class="fw-b">Technology:</span> ASP.NET MVC, Vuejs, JavaScript, Windown Form, HTML/SCSS/CSS
 													<br>
-													<span class="fw-b">Prototyping tool:</span> Adobe XD
+													<span class="fw-b">Prototyping tool:</span> Adobe XD, Figma
 												</div>
 											</div>
 										</div>

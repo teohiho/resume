@@ -60,6 +60,7 @@
 											<div style="clear:both;"></div>
 											<div class="experience__detail-item__work">
 												<p class="pt-10">This is a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p>
+												<p>We create web app products, winforms applications that provide tools to meet customer needs such as in the logistics industry, order management, invoices...</p>
 												<ul>
 													<li>Maintenance and adding new features to the available web app are requested from customers</li>
 													<li>I was responsible for designing the user interface using Adobe XD, and collaborating with experienced people to ensure clear and effective design,developing new pages, ensuring perfect pixel accuracy.</li>
@@ -67,7 +68,9 @@
 													<li>Maintenance and adding new features to the Windows Forms project</li>
 												</ul>
 												<div class="technology pt-10">
-													<span class="fw-b">Technology:</span> ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, HTML, SCSS, CSS
+													<span class="fw-b">Technology:</span> ASP.NET MVC, Vuejs, JavaScript, Windown Form, HTML/SCSS/CSS
+													<br>
+													<span class="fw-b">Prototyping tool:</span> Adobe XD, Figma
 												</div>
 											</div>
 										</div>

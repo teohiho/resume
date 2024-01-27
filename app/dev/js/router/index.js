@@ -7,7 +7,7 @@ const routes = [
   {
     name: "Home",
     path: "/",
-    component: Home,
+    component: Basic,
     meta: {title: '[EN] Resume'}
   },
   {

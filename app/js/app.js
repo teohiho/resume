@@ -17874,7 +17874,7 @@ __webpack_require__.r(__webpack_exports__);
 var routes = [{
   name: "Home",
   path: "/",
-  component: _pages_Home_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+  component: _pages_Basic_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
   meta: {
     title: '[EN] Resume'
   }
@@ -18456,11 +18456,16 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, null, -1 /* HOISTED */);
 var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "info__description pt-10"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" I'm Hien (my nickname is Teo), a software developer with 2 years of experience in web development. I specialize in creating a website and creating user-friendly interfaces using C#, SCSS, JavaScript, and Vue. Recently I am learning more languages like Python. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" I am Vietnamese but currently I live in Japan. I'm trying to find new fun things, and especially looking for more friends. Nice to meet you ^o^ "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" This is my basic information! "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", {
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" I'm Hien (my nickname is Teo), a software developer with 2 years of experience in web development. I specialize in creating a website and creating user-friendly interfaces using C#, SCSS, JavaScript, and Vue. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" I am Vietnamese but currently I live in Japan. I'm trying to find new fun things, and especially looking for more friends. Nice to meet you ^o^ "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", {
   style: {
     "font-size": "14px"
   }
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" (Please "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, "open this link in your browser"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(", it will look better on Instagram.)")])], -1 /* HOISTED */);
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  style: {
+    "text-decoration": "underline",
+    "color": "cadetblue"
+  }
+}, "This is basic information that can be made public. Please contact me if you want my detailed CV. uwu")])], -1 /* HOISTED */);
 var _hoisted_13 = {
   "class": "cv"
 };
@@ -18474,7 +18479,7 @@ var _hoisted_16 = {
   "class": "cv__title"
 };
 var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "W O R K   E X P E R I E N C E", -1 /* HOISTED */);
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"cv__content\"><div class=\"experience\"><div class=\"experience__position\">Software Engineer</div><!-- &lt;div class=&quot;experience__company&quot;&gt;Nihon System&lt;/div&gt; --><div class=\"experience__detail\"><div class=\"experience__detail-item\"><div class=\"experience__detail-item__time text-sm\"><i class=\"fa-solid fa-calendar-days\"></i> 2022 - Current </div><div class=\"experience__detail-item__location text-sm\"><i class=\"fa-solid fa-location-dot\"></i> Japan </div><div style=\"clear:both;\"></div><div class=\"experience__detail-item__work\"><p class=\"pt-10\">Working for a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p><ul></ul><div class=\"technology pt-10\"><span class=\"fw-b\">Technology:</span> ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, HTML, SCSS, CSS <br><span class=\"fw-b\">Prototyping tool:</span> Adobe XD </div></div></div></div></div></div>", 1);
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"cv__content\"><div class=\"experience\"><div class=\"experience__position\">Software Engineer</div><!-- &lt;div class=&quot;experience__company&quot;&gt;Nihon System&lt;/div&gt; --><div class=\"experience__detail\"><div class=\"experience__detail-item\"><div class=\"experience__detail-item__time text-sm\"><i class=\"fa-solid fa-calendar-days\"></i> 2022 - Current </div><div class=\"experience__detail-item__location text-sm\"><i class=\"fa-solid fa-location-dot\"></i> Japan </div><div style=\"clear:both;\"></div><div class=\"experience__detail-item__work\"><p class=\"pt-10\">Working for a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p><p>We create web app products, winforms applications that provide tools to meet customer needs such as in the logistics industry, order management, invoices...</p><ul></ul><div class=\"technology pt-10\"><span class=\"fw-b\">Technology:</span> ASP.NET MVC, Vuejs, JavaScript, Windown Form, HTML/SCSS/CSS <br><span class=\"fw-b\">Prototyping tool:</span> Adobe XD, Figma </div></div></div></div></div></div>", 1);
 var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "cv__col cv__center"
 }, null, -1 /* HOISTED */);
@@ -18537,8 +18542,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", null, "BASIC", -1 /* HOISTED */);
+
 function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, "HOME");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("HOME "), _hoisted_1]);
 }
 
 /***/ }),
@@ -18604,7 +18611,7 @@ var _hoisted_15 = {
   "class": "cv__title"
 };
 var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "W O R K   E X P E R I E N C E", -1 /* HOISTED */);
-var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"cv__content\"><div class=\"experience\"><div class=\"experience__position\">Software Engineer</div><div class=\"experience__company\">Nihon System</div><div class=\"experience__detail\"><div class=\"experience__detail-item\"><div class=\"experience__detail-item__time text-sm\"><i class=\"fa-solid fa-calendar-days\"></i> March 2022 - Current </div><div class=\"experience__detail-item__location text-sm\"><i class=\"fa-solid fa-location-dot\"></i> Japan </div><div style=\"clear:both;\"></div><div class=\"experience__detail-item__work\"><p class=\"pt-10\">This is a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p><ul><li>Maintenance and adding new features to the available web app are requested from customers</li><li>I was responsible for designing the user interface using Adobe XD, and collaborating with experienced people to ensure clear and effective design,developing new pages, ensuring perfect pixel accuracy.</li><li>I also developed a web app for the project using Vuejs.</li><li>Maintenance and adding new features to the Windows Forms project</li></ul><div class=\"technology pt-10\"><span class=\"fw-b\">Technology:</span> ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, HTML, SCSS, CSS </div></div></div></div></div></div>", 1);
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"cv__content\"><div class=\"experience\"><div class=\"experience__position\">Software Engineer</div><div class=\"experience__company\">Nihon System</div><div class=\"experience__detail\"><div class=\"experience__detail-item\"><div class=\"experience__detail-item__time text-sm\"><i class=\"fa-solid fa-calendar-days\"></i> March 2022 - Current </div><div class=\"experience__detail-item__location text-sm\"><i class=\"fa-solid fa-location-dot\"></i> Japan </div><div style=\"clear:both;\"></div><div class=\"experience__detail-item__work\"><p class=\"pt-10\">This is a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p><p>We create web app products, winforms applications that provide tools to meet customer needs such as in the logistics industry, order management, invoices...</p><ul><li>Maintenance and adding new features to the available web app are requested from customers</li><li>I was responsible for designing the user interface using Adobe XD, and collaborating with experienced people to ensure clear and effective design,developing new pages, ensuring perfect pixel accuracy.</li><li>I also developed a web app for the project using Vuejs.</li><li>Maintenance and adding new features to the Windows Forms project</li></ul><div class=\"technology pt-10\"><span class=\"fw-b\">Technology:</span> ASP.NET MVC, Vuejs, JavaScript, Windown Form, HTML/SCSS/CSS <br><span class=\"fw-b\">Prototyping tool:</span> Adobe XD, Figma </div></div></div></div></div></div>", 1);
 var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "cv__col cv__center"
 }, null, -1 /* HOISTED */);
@@ -19240,13 +19247,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _App_vue_vue_type_template_id_2c4b4dc9__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=2c4b4dc9 */ "./js/App.vue?vue&type=template&id=2c4b4dc9");
 /* harmony import */ var _App_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&setup=true&lang=js */ "./js/App.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_2c4b4dc9__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/App.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_2c4b4dc9__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/App.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19268,13 +19275,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Appear_vue_vue_type_template_id_5038fc16__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Appear.vue?vue&type=template&id=5038fc16 */ "./js/components/Appear.vue?vue&type=template&id=5038fc16");
 /* harmony import */ var _Appear_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Appear.vue?vue&type=script&lang=js */ "./js/components/Appear.vue?vue&type=script&lang=js");
-/* harmony import */ var C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Appear_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Appear_vue_vue_type_template_id_5038fc16__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/Appear.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Appear_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Appear_vue_vue_type_template_id_5038fc16__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/Appear.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19295,12 +19302,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Footer_vue_vue_type_template_id_39d3711c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer.vue?vue&type=template&id=39d3711c */ "./js/components/Footer.vue?vue&type=template&id=39d3711c");
-/* harmony import */ var C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_Footer_vue_vue_type_template_id_39d3711c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/Footer.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_Footer_vue_vue_type_template_id_39d3711c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/Footer.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19322,13 +19329,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Header_vue_vue_type_template_id_5b05d50e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header.vue?vue&type=template&id=5b05d50e */ "./js/components/Header.vue?vue&type=template&id=5b05d50e");
 /* harmony import */ var _Header_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header.vue?vue&type=script&lang=js */ "./js/components/Header.vue?vue&type=script&lang=js");
-/* harmony import */ var C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Header_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Header_vue_vue_type_template_id_5b05d50e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/Header.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Header_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Header_vue_vue_type_template_id_5b05d50e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/Header.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19350,13 +19357,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _LoadingScreen_vue_vue_type_template_id_077518d7__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LoadingScreen.vue?vue&type=template&id=077518d7 */ "./js/components/LoadingScreen.vue?vue&type=template&id=077518d7");
 /* harmony import */ var _LoadingScreen_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LoadingScreen.vue?vue&type=script&lang=js */ "./js/components/LoadingScreen.vue?vue&type=script&lang=js");
-/* harmony import */ var C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_LoadingScreen_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_LoadingScreen_vue_vue_type_template_id_077518d7__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/LoadingScreen.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_LoadingScreen_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_LoadingScreen_vue_vue_type_template_id_077518d7__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/LoadingScreen.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19378,13 +19385,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Basic_vue_vue_type_template_id_409980cb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Basic.vue?vue&type=template&id=409980cb */ "./js/pages/Basic.vue?vue&type=template&id=409980cb");
 /* harmony import */ var _Basic_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Basic.vue?vue&type=script&setup=true&lang=js */ "./js/pages/Basic.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Basic_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Basic_vue_vue_type_template_id_409980cb__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/pages/Basic.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Basic_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Basic_vue_vue_type_template_id_409980cb__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/pages/Basic.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19405,12 +19412,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Home_vue_vue_type_template_id_7cf3aa52__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Home.vue?vue&type=template&id=7cf3aa52 */ "./js/pages/Home.vue?vue&type=template&id=7cf3aa52");
-/* harmony import */ var C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_Home_vue_vue_type_template_id_7cf3aa52__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/pages/Home.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_Home_vue_vue_type_template_id_7cf3aa52__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/pages/Home.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19432,13 +19439,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Resume_vue_vue_type_template_id_11fe0840__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Resume.vue?vue&type=template&id=11fe0840 */ "./js/pages/Resume.vue?vue&type=template&id=11fe0840");
 /* harmony import */ var _Resume_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Resume.vue?vue&type=script&setup=true&lang=js */ "./js/pages/Resume.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_Users_Teo_Documents_Project_Coding_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Resume_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Resume_vue_vue_type_template_id_11fe0840__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/pages/Resume.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Resume_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Resume_vue_vue_type_template_id_11fe0840__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/pages/Resume.vue"]])
 /* hot reload */
 if (false) {}
 

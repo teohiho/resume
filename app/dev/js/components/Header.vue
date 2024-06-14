@@ -8,10 +8,10 @@
 			</div>
 			<div class="header__right">
 				<div class="header__lang">
-					<select name="lang">
-						<option var="ja">日本語</option>
-						<option var="en">English</option>
-						<option var="vn">Tiếng Việt</option>
+					<select name="lang" @change="updateLanguage">
+						<option value="ja">日本語</option>
+						<option value="en" selected="selected">English</option>
+						<option value="vn">Tiếng Việt</option>
 					</select>
 				</div>
 				<div class="header__theme">
@@ -32,13 +32,23 @@
 <script>
 
 	export default {
+		props: {
+            language : {
+                type: String,
+				default: 'en',
+				required: false
+            }
+        },
 		data(){
 
 		},
 		methods: {
 			changeTheme(e) {
-				console.log(e.target.value);
 				document.documentElement.setAttribute('data-theme', e.target.value);
+			},
+
+			updateLanguage(event) {
+				this.$store.dispatch('updateLanguage', event.target.value);
 			}
 		}
 	}

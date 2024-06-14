@@ -17,7 +17,7 @@ const store = createStore({
             }
           ],
           description: "I'm Ho Thi Thu Hien, a software developer with 2 years of experience in web development. I specialize in creating a website and creating user-friendly interfaces using C#, SCSS, JavaScript, and Vue.",
-          skills: "ASP.NET, Javascript, Vuejs, SCSS",
+          skills: "ASP.NET, SQL Server, Javascript, Vuejs, SCSS",
           educations: {
             educations: [
               {
@@ -32,22 +32,74 @@ const store = createStore({
               },
             ]
           },
-          experience: [
-            {
+          experience: {
               position: "Software Engineer",
               company: "Nihon System",
               date: "March 2022 - Current",
               location: "Japan",
               content: "<p class='pt-10'>This is a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p><ul><li>Maintenance and adding new features to the available web app are requested from customers</li><li>I was responsible for designing the user interface using Adobe XD, and collaborating with experienced people to ensure clear and effective design,developing new pages, ensuring perfect pixel accuracy.</li><li>I also developed a web app for the project using Vuejs.</li></ul>",
-              technology: "ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, HTML, SCSS, CSS"
+              technology: "ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, SQLserver, HTML, SCSS, CSS"
             }
-          ]
-        }
-      }
+          
+        },
+        ja: {
+          name: 'ホ・ティ・トゥ・ヒエン',
+          job: 'Web/UI開発者',
+          contacts: [
+            {
+              text: "thuhienho11@gmail.com",
+              link: "mailto:thuhienho11@gmail.com"
+            },
+            {
+              text: "https://github.com/teohiho",
+              link: "mailto:thuhienho11@gmail.com"
+            }
+          ],
+          description: "私は ホ・ティ・トゥ・ヒエンです。Web 開発で 2 年の経験を持つソフトウェア開発者です。C#、SCSS、JavaScript、Vue を使用して Web サイトを作成し、ユーザーフレンドリーなインターフェイスを作成することを専門としています。",
+          skills: "ASP.NET, Javascript, Vuejs, SCSS",
+          educations: {
+            educations: [
+              {
+                date: "2015 - 2020",
+                text: "ダナン工科大学"
+              }
+            ],
+            certificates: [
+              {
+                date: "8/2022",
+                text: "日本語能力試験N2"
+              },
+            ]
+          },
+          experience: {
+              position: "ソフトウェアエンジニア",
+              company: "日本システム",
+              date: "2022年3月 - 現在",
+              location: "日本",
+              content: "これは、Web アプリ製品でユーザーの問題を解決するテクノロジー ソリューションを提供することに特化した会社です。同時に、同社は独自の製品も作成しています。</p><ul><li>利用可能な Web アプリのメンテナンスと新機能の追加は、顧客から要求されます</li><li>Adobe XD を使用してユーザー インターフェイスを設計し、経験豊富な人々と協力して明確で効果的なデザインを確保し、新しいページを開発し、完璧なピクセル精度を確保することを担当しました。</li><li>また、Vuejs を使用してプロジェクト用の Web アプリを開発しました。</li></ul>",
+              technology: "ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, SQLserver HTML, SCSS, CSS"
+            }
+          
+        },
+      },
+
+      selectedLanguage: 'en' // Ngôn ngữ mặc định
     },
 
     mutations: {
-      
+      setLanguage(state, language) {
+        state.selectedLanguage = language;
+      }
+    },
+
+    actions: {
+      updateLanguage({ commit }, language) {
+        commit('setLanguage', language);
+      }
+    },
+
+    getters: {
+      getSelectedLanguage: (state) => state.selectedLanguage
     }
   })
 

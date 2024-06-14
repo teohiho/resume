@@ -1,5 +1,6 @@
 <template>
 	<div class="body">
+		<!-- <p>Selected Language: {{ selectedLanguage }}</p> -->
 		<div class="body__container">
 				<div class="info">
 					<div class="info__name">
@@ -12,7 +13,7 @@
 					</div>
 					<div class="info__job">
 						
-						<b>{{ en.job }}</b>
+						<!-- <b>{{ en.job }}</b> -->
 							<!-- <transition appear :css="false" @before-enter="beforeEnter" @enter="enter">
 								<div>Transitions Test</div>
 							</transition> -->
@@ -32,7 +33,7 @@
 						</a>
 					</div>
 					<div class="info__description pt-10">
-						I'm Ho Thi Thu Hien, a software developer with 2 years of experience in web development. I specialize in creating a website and creating user-friendly interfaces using C#, SCSS, JavaScript, and Vue.
+						{{ en.description }}
 					</div>
 				</div>
 				<div class="cv">
@@ -45,30 +46,31 @@
 							</div>
 							<div class="cv__content">
 								<div class="experience">
-									<div class="experience__position">Software Engineer</div>
-									<div class="experience__company">Nihon System</div>
+									<div class="experience__position">{{ en.experience.position }}</div>
+									<div class="experience__company">{{ en.experience.company }}</div>
 									<div class="experience__detail">
 										<div class="experience__detail-item ">
 											<div class="experience__detail-item__time text-sm">
 												<i class="fa-solid fa-calendar-days"></i>
-												March 2022 - Current
+												{{ en.experience.date }}
 											</div>
 											<div class="experience__detail-item__location text-sm">
 												<i class="fa-solid fa-location-dot"></i>
-												Japan
+												{{ en.experience.location }}
 											</div>
 											<div style="clear:both;"></div>
 											<div class="experience__detail-item__work">
-												<p class="pt-10">This is a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p>
+												<!-- <p class="pt-10">This is a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p>
 												<p>We create web app products, winforms applications that provide tools to meet customer needs such as in the logistics industry, order management, invoices...</p>
 												<ul>
 													<li>Maintenance and adding new features to the available web app are requested from customers</li>
 													<li>I was responsible for designing the user interface using Adobe XD, and collaborating with experienced people to ensure clear and effective design,developing new pages, ensuring perfect pixel accuracy.</li>
 													<li>I also developed a web app for the project using Vuejs.</li>
 													<li>Maintenance and adding new features to the Windows Forms project</li>
-												</ul>
+												</ul> -->
+												<span v-html="en.experience.content"></span>
 												<div class="technology pt-10">
-													<span class="fw-b">Technology:</span> ASP.NET MVC, Vuejs, JavaScript, Windown Form, HTML/SCSS/CSS
+													<span class="fw-b">Technology:</span> {{ en.experience.technology }}
 													<br>
 													<span class="fw-b">Prototyping tool:</span> Adobe XD, Figma
 												</div>
@@ -88,7 +90,7 @@
 								</Appear>
 							</div>
 							<div class="cv__content">
-								ASP.NET, Javascript, Vuejs, SCSS,..
+								{{ en.skills }}
 							</div>
 						</div>
 						<div class="cv__item cv__education">
@@ -102,13 +104,13 @@
 									<li>
 										<span class="fw-b">Education</span>
 										<ul class="inside">
-											<li>2015 - 2020: Danang University of Science and Technology</li>
+											<li>{{ en.educations.educations[0].date }}: {{ en.educations.educations[0].text }}</li>
 										</ul>
 									</li>
 									<li class="pt-10">
 										<span class="fw-b">Certificate</span>
 										<ul class="inside">
-											<li>8/2022: Japanese-Language Proficiency Test N2 Certificate</li>
+											<li>{{ en.educations.certificates[0].date }}: {{ en.educations.certificates[0].text }}</li>
 										</ul>
 									</li>
 								</ul>
@@ -118,23 +120,34 @@
 					</div>
 				</div>
 		</div>
+		
 	</div>
+	
 </template>
 
 <script setup>
 	import Appear from '../components/Appear.vue';
+	
 </script>
 
 <script>
+	import { mapGetters } from 'vuex';
 	export default {
+		props: ['language'],
+
+		computed: {
+			...mapGetters(['getSelectedLanguage'])
+		},
+
 		data(){
 			return {
+				
+				selectedLanguage: this.getSelectedLanguage || "en",
 				en: this.$store.state.data.en,
       		}
 		},
 
 		mounted() {
-			console.log(this.$store.state.data.en.name)
 		},
 
 		methods: {
@@ -156,6 +169,23 @@
 				return temp.split(' ').join(' ');
 			}
 		},
+
+		watch: {
+			getSelectedLanguage(newLang) {
+				this.selectedLanguage = newLang;
+
+				// 言語値が変更されたときに他の機能を実行します
+				switch(this.selectedLanguage){
+					case "en":
+						this.en = this.$store.state.data.en;
+						break;
+					case "ja":
+						this.en = this.$store.state.data.ja;
+						break
+				}
+				
+			}
+		}
 	}
 	
 </script>

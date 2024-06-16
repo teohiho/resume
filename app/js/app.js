@@ -17876,14 +17876,14 @@ var routes = [{
   path: "/",
   component: _pages_Basic_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
   meta: {
-    title: '[EN] Resume'
+    title: 'Home'
   }
 }, {
   name: "Resume",
   path: "/1119",
   component: _pages_Resume_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
   meta: {
-    title: '[EN] Resume'
+    title: 'Resume'
   }
 }, {
   name: "Basic",
@@ -17980,6 +17980,68 @@ var store = (0,vuex__WEBPACK_IMPORTED_MODULE_0__.createStore)({
           location: "日本",
           content: "これは、Web アプリ製品でユーザーの問題を解決するテクノロジー ソリューションを提供することに特化した会社です。同時に、同社は独自の製品も作成しています。</p><ul><li>利用可能な Web アプリのメンテナンスと新機能の追加は、顧客から要求されます</li><li>Adobe XD を使用してユーザー インターフェイスを設計し、経験豊富な人々と協力して明確で効果的なデザインを確保し、新しいページを開発し、完璧なピクセル精度を確保することを担当しました。</li><li>また、Vuejs を使用してプロジェクト用の Web アプリを開発しました。</li></ul>",
           technology: "ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, SQLserver HTML, SCSS, CSS"
+        }
+      },
+      en_base: {
+        name: 'H I E N  H O',
+        job: 'Web/UI Developer',
+        contacts: [{
+          text: "",
+          link: "mailto:"
+        }, {
+          text: "",
+          link: "mailto:"
+        }],
+        description: "I'm Hien (my nickname is Teo), a software developer with 2 years of experience in web development. I specialize in creating a website and creating user-friendly interfaces using C#, SCSS, JavaScript, and Vue.<br><br>I am Vietnamese but currently I live in Japan. I'm trying to find new fun things, and especially looking for more friends. Nice to meet you ^o^<br><br><small style='font-size: 14px'><a style='text-decoration: underline;color: cadetblue;'>This is basic information that can be made public. Please contact me if you want my detailed CV. uwu</a></small>",
+        skills: "ASP.NET, SQL Server, Javascript, Vuejs, SCSS",
+        educations: {
+          educations: [{
+            date: "2015 - 2020",
+            text: "Danang University of Science and Technology"
+          }],
+          certificates: [{
+            date: "2022",
+            text: "Japanese-Language Proficiency Test N2 Certificate"
+          }]
+        },
+        experience: {
+          position: "Software Engineer",
+          company: "Nihon System",
+          date: "2022 - Current",
+          location: "Japan",
+          content: "<p class='pt-10'>Working for a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p><p>We create web app products, winforms applications that provide tools to meet customer needs such as in the logistics industry, order management, invoices...</p>",
+          technology: "ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, SQLserver, HTML, SCSS, CSS"
+        }
+      },
+      ja_base: {
+        name: 'ヒエン・ホ',
+        job: 'Web/UI開発者',
+        contacts: [{
+          text: "",
+          link: "mailto:"
+        }, {
+          text: "",
+          link: "mailto:"
+        }],
+        description: "私は Hien (ニックネームは Teo) です。Web 開発の経験が 2 年あるソフトウェア開発者です。C#、SCSS、JavaScript、Vue を使用して Web サイトの作成とユーザー フレンドリーなインターフェイスの作成を専門としています。<br><br>私はベトナム人ですが、現在は日本に住んでいます。新しい楽しいことを探していて、特にもっと友達を探しています。はじめまして ^o^<br><br><small style='font-size: 14px'><a style='text-decoration: underline;color: cadetblue;'>これは公開できる基本情報です。詳細な履歴書が必要な場合はご連絡ください。uwu</a></small>",
+        skills: "ASP.NET, SQL Server, Javascript, Vuejs, SCSS",
+        educations: {
+          educations: [{
+            date: "2015 - 2020",
+            text: "ダナン工科大学"
+          }],
+          certificates: [{
+            date: "2022",
+            text: "日本語能力試験N2"
+          }]
+        },
+        experience: {
+          position: "ソフトウェアエンジニア",
+          company: "日本システム",
+          date: "2022 - 現在",
+          location: "日本",
+          content: "<p class='pt-10'>Web アプリ製品でユーザーの問題を解決するテクノロジー ソリューションの提供を専門とする会社で働いています。同時に、この会社は独自の製品も作成しています。</p><p>私たちは、物流業界、注文管理、請求書などの顧客のニーズを満たすツールを提供する Web アプリ製品、WinForms アプリケーションを作成します...</p>",
+          technology: "ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, SQLserver, HTML, SCSS, CSS"
         }
       }
     },
@@ -18145,6 +18207,8 @@ __webpack_require__.r(__webpack_exports__);
     },
     updateLanguage: function updateLanguage(event) {
       this.$store.dispatch('updateLanguage', event.target.value);
+      var element = document.getElementById("app");
+      if (event.target.value == "en") element.classList.add("en-fontstyle");else if (event.target.value == "ja") element.classList.add("ja-fontstyle");
     }
   }
 });
@@ -18180,16 +18244,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _components_Appear_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Appear.vue */ "./js/components/Appear.vue");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm-bundler.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 var __default__ = {
+  name: "Basic",
+  props: ['language'],
+  computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_1__.mapGetters)(['getSelectedLanguage'])),
   data: function data() {
     return {
-      en: this.$store.state.data.en
+      selectedLanguage: this.getSelectedLanguage || "en_base",
+      en: this.$store.state.data.en_base
     };
   },
-  mounted: function mounted() {
-    console.log(this.$store.state.data.en.name);
-  },
+  mounted: function mounted() {},
   methods: {
     beforeEnter: function beforeEnter(e) {
       e.style.opacity = 0;
@@ -18203,16 +18274,35 @@ var __default__ = {
     },
     addSpace: function addSpace(str) {
       var temp = str.replaceAll("", "\xa0");
-      return temp.split(' ').join(' ');
+      console.log(temp);
+      console.log(temp.split(' ').join(' '));
+      return temp.split(' ').join(' ').substring(1);
+    }
+  },
+  watch: {
+    getSelectedLanguage: function getSelectedLanguage(newLang) {
+      this.selectedLanguage = newLang;
+
+      // 言語値が変更されたときに他の機能を実行します
+      switch (this.selectedLanguage) {
+        case "en":
+          this.en = this.$store.state.data.en_base;
+          break;
+        case "ja":
+          this.en = this.$store.state.data.ja_base;
+          break;
+      }
     }
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/Object.assign(__default__, {
-  __name: 'Basic',
   setup: function setup(__props, _ref) {
     var expose = _ref.expose;
     expose();
     var __returned__ = {
+      get mapGetters() {
+        return vuex__WEBPACK_IMPORTED_MODULE_1__.mapGetters;
+      },
       Appear: _components_Appear_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
@@ -18266,7 +18356,7 @@ var __default__ = {
     },
     addSpace: function addSpace(str) {
       var temp = str.replaceAll("", "\xa0");
-      return temp.split(' ').join(' ');
+      return temp.split(' ').join(' ').substring(1);
     }
   },
   watch: {
@@ -18432,34 +18522,32 @@ var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   value: "en",
   selected: "selected"
 }, "English", -1 /* HOISTED */);
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
-  value: "vn"
-}, "Tiếng Việt", -1 /* HOISTED */);
-var _hoisted_9 = [_hoisted_6, _hoisted_7, _hoisted_8];
-var _hoisted_10 = {
+var _hoisted_8 = {
   "class": "header__theme"
 };
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
   value: "light",
   "var": "light"
-}, "  Light ", -1 /* HOISTED */);
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "fa-regular fa-sun"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Light ")], -1 /* HOISTED */);
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
   value: "dark",
   "var": "dark"
-}, "  Dark ", -1 /* HOISTED */);
-var _hoisted_13 = [_hoisted_11, _hoisted_12];
+}, " Dark ", -1 /* HOISTED */);
+var _hoisted_11 = [_hoisted_9, _hoisted_10];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("header", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
     name: "lang",
     onChange: _cache[0] || (_cache[0] = function () {
       return $options.updateLanguage && $options.updateLanguage.apply($options, arguments);
     })
-  }, _hoisted_9, 32 /* HYDRATE_EVENTS */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
+  }, [_hoisted_6, _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("<option value=\"vn\">Tiếng Việt</option>")], 32 /* HYDRATE_EVENTS */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
     name: "theme",
     onChange: _cache[1] || (_cache[1] = function ($event) {
       return $options.changeTheme($event);
     })
-  }, _hoisted_13, 32 /* HYDRATE_EVENTS */)])])])]);
+  }, _hoisted_11, 32 /* HYDRATE_EVENTS */)])])])]);
 }
 
 /***/ }),
@@ -18522,10 +18610,10 @@ var _hoisted_3 = {
 var _hoisted_4 = {
   "class": "info__name"
 };
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, "H I E N   H O", -1 /* HOISTED */);
-var _hoisted_6 = {
+var _hoisted_5 = ["innerHTML"];
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "info__job"
-};
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <b>{{ en.job }}</b> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <transition appear :css=\"false\" @before-enter=\"beforeEnter\" @enter=\"enter\">\r\n\t\t\t\t\t\t\t\t<div>Transitions Test</div>\r\n\t\t\t\t\t\t\t</transition> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" :transition=\"['100px', 0]\" "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" :duration=\"500\" :delay=\"0\" ")], -1 /* HOISTED */);
 var _hoisted_7 = {
   "class": "info__contacts text-sm"
 };
@@ -18534,86 +18622,162 @@ var _hoisted_8 = {
   href: "mailto:thuhienho11@gmail.com"
 };
 var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "fa-solid fa-envelope"
+  "class": "fa-solid fa-envelope fa-lg"
 }, null, -1 /* HOISTED */);
 var _hoisted_10 = {
   "class": "info__contacts--item info__contacts--github",
-  href: ""
+  href: "https://github.com/teohiho"
 };
 var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "fa-brands fa-github"
+  "class": "fa-brands fa-github fa-lg"
 }, null, -1 /* HOISTED */);
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_12 = {
   "class": "info__description pt-10"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" I'm Hien (my nickname is Teo), a software developer with 2 years of experience in web development. I specialize in creating a website and creating user-friendly interfaces using C#, SCSS, JavaScript, and Vue. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" I am Vietnamese but currently I live in Japan. I'm trying to find new fun things, and especially looking for more friends. Nice to meet you ^o^ "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", {
-  style: {
-    "font-size": "14px"
-  }
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  style: {
-    "text-decoration": "underline",
-    "color": "cadetblue"
-  }
-}, "This is basic information that can be made public. Please contact me if you want my detailed CV. uwu")])], -1 /* HOISTED */);
-var _hoisted_13 = {
+};
+var _hoisted_13 = ["innerHTML"];
+var _hoisted_14 = {
   "class": "cv"
 };
-var _hoisted_14 = {
+var _hoisted_15 = {
   "class": "cv__col cv__right"
 };
-var _hoisted_15 = {
+var _hoisted_16 = {
   "class": "cv__item cv__experience"
 };
-var _hoisted_16 = {
+var _hoisted_17 = {
   "class": "cv__title"
 };
-var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "W O R K   E X P E R I E N C E", -1 /* HOISTED */);
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"cv__content\"><div class=\"experience\"><div class=\"experience__position\">Software Engineer</div><!-- &lt;div class=&quot;experience__company&quot;&gt;Nihon System&lt;/div&gt; --><div class=\"experience__detail\"><div class=\"experience__detail-item\"><div class=\"experience__detail-item__time text-sm\"><i class=\"fa-solid fa-calendar-days\"></i> 2022 - Current </div><div class=\"experience__detail-item__location text-sm\"><i class=\"fa-solid fa-location-dot\"></i> Japan </div><div style=\"clear:both;\"></div><div class=\"experience__detail-item__work\"><p class=\"pt-10\">Working for a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p><p>We create web app products, winforms applications that provide tools to meet customer needs such as in the logistics industry, order management, invoices...</p><ul></ul><div class=\"technology pt-10\"><span class=\"fw-b\">Technology:</span> ASP.NET MVC, Vuejs, JavaScript, Windown Form, HTML/SCSS/CSS <br><span class=\"fw-b\">Prototyping tool:</span> Adobe XD, Figma </div></div></div></div></div></div>", 1);
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "cv__col cv__center"
-}, null, -1 /* HOISTED */);
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "W O R K   E X P E R I E N C E", -1 /* HOISTED */);
+var _hoisted_19 = {
+  "class": "cv__content"
+};
 var _hoisted_20 = {
-  "class": "cv__col cv__left"
+  "class": "experience"
 };
 var _hoisted_21 = {
-  "class": "cv__item cv__education"
+  "class": "experience__position"
 };
 var _hoisted_22 = {
+  "class": "experience__detail"
+};
+var _hoisted_23 = {
+  "class": "experience__detail-item"
+};
+var _hoisted_24 = {
+  "class": "experience__detail-item__time text-sm"
+};
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "fa-solid fa-calendar-days"
+}, null, -1 /* HOISTED */);
+var _hoisted_26 = {
+  "class": "experience__detail-item__location text-sm"
+};
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "fa-solid fa-location-dot"
+}, null, -1 /* HOISTED */);
+var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  style: {
+    "clear": "both"
+  }
+}, null, -1 /* HOISTED */);
+var _hoisted_29 = {
+  "class": "experience__detail-item__work"
+};
+var _hoisted_30 = ["innerHTML"];
+var _hoisted_31 = {
+  "class": "technology pt-10"
+};
+var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "fw-b"
+}, "Technology:", -1 /* HOISTED */);
+var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
+var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "fw-b"
+}, "Prototyping tool:", -1 /* HOISTED */);
+var _hoisted_35 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "cv__col cv__center"
+}, null, -1 /* HOISTED */);
+var _hoisted_36 = {
+  "class": "cv__col cv__left"
+};
+var _hoisted_37 = {
+  "class": "cv__item cv__skills"
+};
+var _hoisted_38 = {
   "class": "cv__title"
 };
-var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "E d u c a t i o n", -1 /* HOISTED */);
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"cv__content\"><ul class=\"\"><li><span class=\"fw-b\">Education</span><ul class=\"inside\"><li>Danang University of Science and Technology</li></ul></li><li class=\"pt-10\"><span class=\"fw-b\">Certificate</span><ul class=\"inside\"><li>Japanese-Language Proficiency Test N2 Certificate (JLPT N2)</li></ul></li></ul></div>", 1);
-var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("link", {
-  rel: "stylesheet",
-  href: "../../../css/app.css"
-}, null, -1 /* HOISTED */);
-
+var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "S K I L L S", -1 /* HOISTED */);
+var _hoisted_40 = {
+  "class": "cv__content"
+};
+var _hoisted_41 = {
+  "class": "cv__item cv__education"
+};
+var _hoisted_42 = {
+  "class": "cv__title"
+};
+var _hoisted_43 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "E d u c a t i o n", -1 /* HOISTED */);
+var _hoisted_44 = {
+  "class": "cv__content"
+};
+var _hoisted_45 = {
+  "class": ""
+};
+var _hoisted_46 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "fw-b"
+}, "Education", -1 /* HOISTED */);
+var _hoisted_47 = {
+  "class": "inside"
+};
+var _hoisted_48 = {
+  "class": "pt-10"
+};
+var _hoisted_49 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "fw-b"
+}, "Certificate", -1 /* HOISTED */);
+var _hoisted_50 = {
+  "class": "inside"
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Appear"], {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>Selected Language: {{ selectedLanguage }}</p> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Appear"], {
     delay: 200,
     transition: ['100px', 0]
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <b>H o &nbsp; T h i &nbsp; T h u &nbsp; H i e n</b>\r\n\t\t\t\t\t\t\t "), _hoisted_5];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <b>H o &nbsp; T h i &nbsp; T h u &nbsp; H i e n</b>\r\n\t\t\t\t\t\t\t "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", {
+        innerHTML: $options.addSpace($data.en.name)
+      }, null, 8 /* PROPS */, _hoisted_5)];
     }),
     _: 1 /* STABLE */
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.job), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <transition appear :css=\"false\" @before-enter=\"beforeEnter\" @enter=\"enter\">\r\n\t\t\t\t\t\t\t\t<div>Transitions Test</div>\r\n\t\t\t\t\t\t\t</transition> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" :transition=\"['100px', 0]\" "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" :duration=\"500\" :delay=\"0\" ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"info__contacts--phone\"></div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.contacts.text), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.contacts.link), 1 /* TEXT */)])]), _hoisted_12]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Appear"], {
+  })]), _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"info__contacts--phone\"></div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.contacts.text), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.contacts.link), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+    innerHTML: $data.en.description
+  }, null, 8 /* PROPS */, _hoisted_13)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Appear"], {
     delay: 200,
     transition: ['100px', 0]
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_17];
+      return [_hoisted_18];
     }),
     _: 1 /* STABLE */
-  })]), _hoisted_18])]), _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"cv__item cv__skills\">\r\n\t\t\t\t\t\t\t<div class=\"cv__title\">\r\n\t\t\t\t\t\t\t\t<Appear :delay=\"200\" :transition=\"['100px', 0]\" >\r\n\t\t\t\t\t\t\t\t\t<span>S K I L L S</span>\r\n\t\t\t\t\t\t\t\t</Appear>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"cv__content\">\r\n\t\t\t\t\t\t\t\tASP.NET, Javascript, Vuejs, SCSS,..\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Appear"], {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.experience.position), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("<div class=\"experience__company\">{{ en.experience.company }}</div>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [_hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.experience.date), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [_hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.experience.location), 1 /* TEXT */)]), _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p class=\"pt-10\">This is a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<p>We create web app products, winforms applications that provide tools to meet customer needs such as in the logistics industry, order management, invoices...</p>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Maintenance and adding new features to the available web app are requested from customers</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>I was responsible for designing the user interface using Adobe XD, and collaborating with experienced people to ensure clear and effective design,developing new pages, ensuring perfect pixel accuracy.</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>I also developed a web app for the project using Vuejs.</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Maintenance and adding new features to the Windows Forms project</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</ul> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+    innerHTML: $data.en.experience.content
+  }, null, 8 /* PROPS */, _hoisted_30), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [_hoisted_32, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.experience.technology) + " ", 1 /* TEXT */), _hoisted_33, _hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Adobe XD, Figma ")])])])])])])])]), _hoisted_35, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_37, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Appear"], {
     delay: 200,
     transition: ['100px', 0]
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_23];
+      return [_hoisted_39];
     }),
     _: 1 /* STABLE */
-  })]), _hoisted_24])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" css "), _hoisted_25]);
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.skills), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Appear"], {
+    delay: 200,
+    transition: ['100px', 0]
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_43];
+    }),
+    _: 1 /* STABLE */
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_45, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_46, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_47, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.educations.educations[0].date) + ": " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.educations.educations[0].text), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_48, [_hoisted_49, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_50, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.educations.certificates[0].date) + ": " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.educations.certificates[0].text), 1 /* TEXT */)])])])])])])])])]);
 }
 
 /***/ }),
@@ -18675,14 +18839,14 @@ var _hoisted_7 = {
   href: "mailto:thuhienho11@gmail.com"
 };
 var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "fa-solid fa-envelope"
+  "class": "fa-solid fa-envelope fa-lg"
 }, null, -1 /* HOISTED */);
 var _hoisted_9 = {
   "class": "info__contacts--item info__contacts--github",
   href: "https://github.com/teohiho"
 };
 var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "fa-brands fa-github"
+  "class": "fa-brands fa-github fa-lg"
 }, null, -1 /* HOISTED */);
 var _hoisted_11 = {
   "class": "info__description pt-10"
@@ -19406,13 +19570,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _App_vue_vue_type_template_id_2c4b4dc9__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=2c4b4dc9 */ "./js/App.vue?vue&type=template&id=2c4b4dc9");
 /* harmony import */ var _App_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&setup=true&lang=js */ "./js/App.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_2c4b4dc9__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/App.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_2c4b4dc9__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/App.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19434,13 +19598,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Appear_vue_vue_type_template_id_5038fc16__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Appear.vue?vue&type=template&id=5038fc16 */ "./js/components/Appear.vue?vue&type=template&id=5038fc16");
 /* harmony import */ var _Appear_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Appear.vue?vue&type=script&lang=js */ "./js/components/Appear.vue?vue&type=script&lang=js");
-/* harmony import */ var C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Appear_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Appear_vue_vue_type_template_id_5038fc16__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/Appear.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Appear_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Appear_vue_vue_type_template_id_5038fc16__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/Appear.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19461,12 +19625,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Footer_vue_vue_type_template_id_39d3711c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer.vue?vue&type=template&id=39d3711c */ "./js/components/Footer.vue?vue&type=template&id=39d3711c");
-/* harmony import */ var C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_Footer_vue_vue_type_template_id_39d3711c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/Footer.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_Footer_vue_vue_type_template_id_39d3711c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/Footer.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19488,13 +19652,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Header_vue_vue_type_template_id_5b05d50e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header.vue?vue&type=template&id=5b05d50e */ "./js/components/Header.vue?vue&type=template&id=5b05d50e");
 /* harmony import */ var _Header_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header.vue?vue&type=script&lang=js */ "./js/components/Header.vue?vue&type=script&lang=js");
-/* harmony import */ var C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Header_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Header_vue_vue_type_template_id_5b05d50e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/Header.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Header_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Header_vue_vue_type_template_id_5b05d50e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/Header.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19516,13 +19680,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _LoadingScreen_vue_vue_type_template_id_077518d7__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LoadingScreen.vue?vue&type=template&id=077518d7 */ "./js/components/LoadingScreen.vue?vue&type=template&id=077518d7");
 /* harmony import */ var _LoadingScreen_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LoadingScreen.vue?vue&type=script&lang=js */ "./js/components/LoadingScreen.vue?vue&type=script&lang=js");
-/* harmony import */ var C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_LoadingScreen_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_LoadingScreen_vue_vue_type_template_id_077518d7__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/LoadingScreen.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_LoadingScreen_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_LoadingScreen_vue_vue_type_template_id_077518d7__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/components/LoadingScreen.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19544,13 +19708,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Basic_vue_vue_type_template_id_409980cb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Basic.vue?vue&type=template&id=409980cb */ "./js/pages/Basic.vue?vue&type=template&id=409980cb");
 /* harmony import */ var _Basic_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Basic.vue?vue&type=script&setup=true&lang=js */ "./js/pages/Basic.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Basic_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Basic_vue_vue_type_template_id_409980cb__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/pages/Basic.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Basic_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Basic_vue_vue_type_template_id_409980cb__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/pages/Basic.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19571,12 +19735,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Home_vue_vue_type_template_id_7cf3aa52__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Home.vue?vue&type=template&id=7cf3aa52 */ "./js/pages/Home.vue?vue&type=template&id=7cf3aa52");
-/* harmony import */ var C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_Home_vue_vue_type_template_id_7cf3aa52__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/pages/Home.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_Home_vue_vue_type_template_id_7cf3aa52__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/pages/Home.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -19598,13 +19762,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Resume_vue_vue_type_template_id_11fe0840__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Resume.vue?vue&type=template&id=11fe0840 */ "./js/pages/Resume.vue?vue&type=template&id=11fe0840");
 /* harmony import */ var _Resume_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Resume.vue?vue&type=script&setup=true&lang=js */ "./js/pages/Resume.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_GitRepos_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Resume_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Resume_vue_vue_type_template_id_11fe0840__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/pages/Resume.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_teo_Documents_Projects_resume_app_dev_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Resume_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Resume_vue_vue_type_template_id_11fe0840__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"js/pages/Resume.vue"]])
 /* hot reload */
 if (false) {}
 

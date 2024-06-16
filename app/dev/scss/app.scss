@@ -87,7 +87,8 @@ input {
 }
 
 select {
-	font-family: 'FontAwesome', 'Second Font name'
+	font-family: 'FontAwesome', 'Second Font name';
+	
 }
 
 .inside {
@@ -109,6 +110,14 @@ select {
 		font-size: 0.875rem;
 }
 
+.en-fontstyle{
+
+}
+
+.ja-fontstyle{
+	font-family: system-ui;
+}
+
 $c_name: '.page';
 #{$c_name} {
     &__inner {
@@ -125,14 +134,14 @@ $c_name: '.header';
 #{$c_name} {
 	position: fixed;
 	left: 0;
-  top: 0;
+  	top: 0;
 	z-index: 100;
 	width: 100%;
 	
 	
 	&__inner {
 		display: flex;
-  	justify-content: space-between;
+  		justify-content: space-between;
 		overflow: hidden;
 		padding: 0.375rem 3.125rem;
 		background-color: $COLOR_HEADER;
@@ -158,6 +167,11 @@ $c_name: '.header';
 
 	&__lang {
 		margin-right: 1rem;
+
+		select {
+	
+			
+		}
 	}
 
 	&__theme {
@@ -187,6 +201,7 @@ $c_name: '.info';
 	}
 
 	&__job {
+		
 		b {
 			font-size: 1.25rem;
 			color: $COLOR_TURN;
@@ -195,11 +210,12 @@ $c_name: '.info';
 
 	&__contacts {
 		display: flex;
-		
+		margin-top: 0.7em;
+		margin-bottom: 0.5em;
 		
 		&--item {
 			&:not(:last-child) {
-				margin-right: 3em;
+				margin-right: 1em;
 			}
 		}
 
@@ -273,6 +289,7 @@ $c_name: '.experience';
 #{$c_name} {
 	&__position {
 		font-size: 1.25rem;
+		margin-bottom: 0.3em;
 	}
 
 	&__company {

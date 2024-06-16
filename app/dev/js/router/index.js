@@ -8,13 +8,13 @@ const routes = [
     name: "Home",
     path: "/",
     component: Basic,
-    meta: {title: '[EN] Resume'}
+    meta: {title: 'Home'}
   },
   {
     name: "Resume",
     path: "/1119",
     component: Resume,
-    meta: {title: '[EN] Resume'}
+    meta: {title: 'Resume'}
   },
   {
     name: "Basic",

@@ -24,11 +24,11 @@
 					</div>
 					<div class="info__contacts text-sm">
 						<!-- <div class="info__contacts--phone"></div> -->
-						<a class="info__contacts--item info__contacts--mail" href="mailto:thuhienho11@gmail.com">
+						<a class="info__contacts--item info__contacts--mail" href="mailto:">
 							<i class="fa-solid fa-envelope fa-lg"></i>
 							{{ en.contacts.text }}
 						</a>
-						<a class="info__contacts--item info__contacts--github" href="https://github.com/teohiho">
+						<a class="info__contacts--item info__contacts--github" href="">
 							<i class="fa-brands fa-github fa-lg"></i>
 							{{ en.contacts.link }}
 						</a>

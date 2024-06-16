@@ -11,16 +11,16 @@
 					<select name="lang" @change="updateLanguage">
 						<option value="ja">日本語</option>
 						<option value="en" selected="selected">English</option>
-						<option value="vn">Tiếng Việt</option>
+						<!--<option value="vn">Tiếng Việt</option>-->
 					</select>
 				</div>
 				<div class="header__theme">
 					<select name="theme" @change="changeTheme($event)">
 						<option value="light" var="light">
-							&#xf0eb; Light
+							<i class="fa-regular fa-sun"></i> Light
 						</option>
 						<option value="dark" var="dark">
-							&#xf186; Dark
+							Dark
 						</option>
 					</select>
 				</div>
@@ -49,6 +49,13 @@
 
 			updateLanguage(event) {
 				this.$store.dispatch('updateLanguage', event.target.value);
+
+
+				var element = document.getElementById("app");
+				if(event.target.value == "en")
+	  				element.classList.add("en-fontstyle");
+				else if (event.target.value == "ja")
+					element.classList.add("ja-fontstyle");
 			}
 		}
 	}

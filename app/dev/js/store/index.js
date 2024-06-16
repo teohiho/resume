@@ -82,7 +82,7 @@ const store = createStore({
         },
 
         en_base: {
-          name: 'H I E N &nbsp; H O',
+          name: 'H I E N  H O',
           job: 'Web/UI Developer',
           contacts: [
             {
@@ -133,7 +133,7 @@ const store = createStore({
               link: "mailto:"
             }
           ],
-          description: "I'm Hien (my nickname is Teo), a software developer with 2 years of experience in web development. I specialize in creating a website and creating user-friendly interfaces using C#, SCSS, JavaScript, and Vue.<br><br>I am Vietnamese but currently I live in Japan. I'm trying to find new fun things, and especially looking for more friends. Nice to meet you ^o^<br><br><small style='font-size: 14px'><a style='text-decoration: underline;color: cadetblue;'>This is basic information that can be made public. Please contact me if you want my detailed CV. uwu</a></small>",
+          description: "私は Hien (ニックネームは Teo) です。Web 開発の経験が 2 年あるソフトウェア開発者です。C#、SCSS、JavaScript、Vue を使用して Web サイトの作成とユーザー フレンドリーなインターフェイスの作成を専門としています。<br><br>私はベトナム人ですが、現在は日本に住んでいます。新しい楽しいことを探していて、特にもっと友達を探しています。はじめまして ^o^<br><br><small style='font-size: 14px'><a style='text-decoration: underline;color: cadetblue;'>これは公開できる基本情報です。詳細な履歴書が必要な場合はご連絡ください。uwu</a></small>",
           skills: "ASP.NET, SQL Server, Javascript, Vuejs, SCSS",
           educations: {
             educations: [
@@ -154,7 +154,7 @@ const store = createStore({
               company: "日本システム",
               date: "2022 - 現在",
               location: "日本",
-              content: "<p class='pt-10'>Working for a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p><p>We create web app products, winforms applications that provide tools to meet customer needs such as in the logistics industry, order management, invoices...</p>",
+              content: "<p class='pt-10'>Web アプリ製品でユーザーの問題を解決するテクノロジー ソリューションの提供を専門とする会社で働いています。同時に、この会社は独自の製品も作成しています。</p><p>私たちは、物流業界、注文管理、請求書などの顧客のニーズを満たすツールを提供する Web アプリ製品、WinForms アプリケーションを作成します...</p>",
               technology: "ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, SQLserver, HTML, SCSS, CSS"
             }
         },

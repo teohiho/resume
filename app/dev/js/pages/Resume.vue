@@ -24,11 +24,11 @@
 					<div class="info__contacts text-sm">
 						<!-- <div class="info__contacts--phone"></div> -->
 						<a class="info__contacts--item info__contacts--mail" href="mailto:thuhienho11@gmail.com">
-							<i class="fa-solid fa-envelope"></i>
+							<i class="fa-solid fa-envelope fa-lg"></i>
 							{{ en.contacts.text }}
 						</a>
 						<a class="info__contacts--item info__contacts--github" href="https://github.com/teohiho">
-							<i class="fa-brands fa-github"></i>
+							<i class="fa-brands fa-github fa-lg"></i>
 							{{ en.contacts.link }}
 						</a>
 					</div>
@@ -166,7 +166,7 @@
 			},
 			addSpace(str) {
 				let temp = str.replaceAll("", "\xa0")
-				return temp.split(' ').join(' ');
+				return temp.split(' ').join(' ').substring(1);
 			}
 		},
 

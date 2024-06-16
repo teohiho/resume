@@ -24177,6 +24177,10 @@ select {
   font-size: 0.875rem;
 }
 
+.ja-fontstyle {
+  font-family: system-ui;
+}
+
 .page__inner {
   margin: auto;
   max-width: 930px;
@@ -24229,9 +24233,11 @@ select {
 }
 .info__contacts {
   display: flex;
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
 }
 .info__contacts--item:not(:last-child) {
-  margin-right: 3em;
+  margin-right: 1em;
 }
 .cv {
   display: flex;
@@ -24266,6 +24272,7 @@ select {
 
 .experience__position {
   font-size: 1.25rem;
+  margin-bottom: 0.3em;
 }
 .experience__company {
   color: var(--COLOR_TURN);

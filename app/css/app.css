@@ -24146,11 +24146,6 @@ a:hover {
   opacity: 0.8;
 }
 
-i {
-  color: var(--COLOR_ICON);
-  margin-right: 0.75em;
-}
-
 input {
   outline: none;
 }
@@ -24181,6 +24176,11 @@ select {
   font-family: system-ui;
 }
 
+.cv_icon {
+  margin-right: 0.75em;
+  color: var(--COLOR_ICON);
+}
+
 .page__inner {
   margin: auto;
   max-width: 930px;
@@ -24189,7 +24189,7 @@ select {
   background-color: var(--COLOR_MAIN);
 }
 
-/* HEADER */
+/*************************** HEADER /***************************/
 .header {
   position: fixed;
   left: 0;
@@ -24216,9 +24216,8 @@ select {
 .header__lang {
   margin-right: 1rem;
 }
-/* BODY */
 .body {
-  padding: 5rem 1.2rem 1rem;
+  padding: 5rem 1.2rem 2rem;
 }
 .info {
   padding-bottom: 2em;
@@ -24286,7 +24285,36 @@ select {
   list-style-type: initial;
   padding-left: 2em;
 }
-/* FOOTER */
+.btn-print {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  top: 50%; /* Adjust as needed */
+  transform: translateY(-50%);
+  background-color: var(--COLOR_HEADER); /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+  margin-left: 0.5em;
+}
+
+/*************************** FOOTER ***************************/
 .text {
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -24299,6 +24327,9 @@ select {
   }
   .body {
     margin-top: -2em;
+  }
+  .btn-print {
+    visibility: hidden;
   }
 }
 /* KEYFRAMES */
@@ -24347,7 +24378,7 @@ select {
   width: 70px;
 }
 
-/* Z*/
+/* Zoom */
 .zoom-in-box {
   animation: zoom-in-zoom-out 2.5s ease infinite;
 }
@@ -24361,5 +24392,22 @@ select {
   }
   100% {
     transform: scale(0.7, 0.7);
+  }
+}
+/*************************** MEDIA PHONE ***************************/
+@media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
+  .btn-print {
+    top: unset;
+    bottom: 0;
+    transform: unset;
+  }
+}
+/*************************** MEDIA TABLET ***************************/
+/* iPads (portrait and landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .btn-print {
+    top: unset;
+    bottom: 0;
+    transform: unset;
   }
 }

@@ -78,8 +78,7 @@ a {
 }
 
 i {
-	color: $COLOR_ICON;
-	margin-right: 0.75em;
+	
 }
 
 input {
@@ -118,6 +117,11 @@ select {
 	font-family: system-ui;
 }
 
+.cv_icon {
+	margin-right: 0.75em;
+	color: $COLOR_ICON;
+}
+
 $c_name: '.page';
 #{$c_name} {
     &__inner {
@@ -129,7 +133,7 @@ $c_name: '.page';
     }
 }
 
-/* HEADER */
+/*************************** HEADER /***************************/
 $c_name: '.header';
 #{$c_name} {
 	position: fixed;
@@ -180,10 +184,10 @@ $c_name: '.header';
 }
 
 
-/* BODY */
+//*************************** BODY /***************************/
 $c_name: '.body';
 #{$c_name} {
-	padding: 5rem 1.2rem 1rem;
+	padding: 5rem 1.2rem 2rem;
     &__container {
         
     }
@@ -326,9 +330,43 @@ $c_name: '.experience';
 
 }
 
+// Button Print
+$c_name: '.btn-print';
+#{$c_name} {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+
+	//
+
+	position: fixed;
+	left: 0;
+	top: 50%; /* Adjust as needed */
+	transform: translateY(-50%);
+	background-color: var(--COLOR_HEADER); /* Green */
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+	margin-left: 0.5em;
+}
 
 
-/* FOOTER */
+/*************************** FOOTER ***************************/
 $c_name: '.footer';
 #{$c_name} {
 
@@ -347,6 +385,9 @@ $c_name: '.footer';
 	}
 	.body {
 		margin-top: -2em;
+	}
+	.btn-print{
+		visibility: hidden;
 	}
   }
 //   @media screen {
@@ -413,19 +454,41 @@ $c_name: '.loading';
 	}
 }
 
-/* Z*/
+/* Zoom */
 .zoom-in-box {
 	animation: zoom-in-zoom-out 2.5s ease infinite;
-  }
+}
   
-  @keyframes zoom-in-zoom-out {
-	0% {
-		transform: scale(0.7, 0.7);
-	  }
-	  50% {
-		transform: scale(1, 1);
-	  }
-	  100% {
-		transform: scale(0.7, 0.7);
-	  }
-  }
+@keyframes zoom-in-zoom-out {
+0% {
+	transform: scale(0.7, 0.7);
+	}
+	50% {
+	transform: scale(1, 1);
+	}
+	100% {
+	transform: scale(0.7, 0.7);
+	}
+}
+
+
+/*************************** MEDIA PHONE ***************************/
+
+@media only screen and (min-device-width : 220px) and (max-device-width : 480px) {
+	.btn-print {
+		top: unset;
+		bottom: 0;
+		transform: unset;
+	}
+	
+}
+
+/*************************** MEDIA TABLET ***************************/
+/* iPads (portrait and landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	.btn-print {
+		top: unset;
+		bottom: 0;
+		transform: unset;
+	}
+}

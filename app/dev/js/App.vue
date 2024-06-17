@@ -7,6 +7,7 @@
 
 				<router-view />
 				<!-- <Resume></Resume> -->
+				 <Tool></Tool>
 				<Footer></Footer>
 			</div>
 		</div>
@@ -18,6 +19,7 @@
 	import Resume from './pages/Resume.vue';
 	import Footer from './components/Footer.vue';
 	import LoadingScreen from "./components/LoadingScreen";
+	import Tool from "./components/Tool";
 </script>
 
 <script>

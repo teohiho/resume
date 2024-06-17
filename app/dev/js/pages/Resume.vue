@@ -24,11 +24,11 @@
 					<div class="info__contacts text-sm">
 						<!-- <div class="info__contacts--phone"></div> -->
 						<a class="info__contacts--item info__contacts--mail" href="mailto:thuhienho11@gmail.com">
-							<i class="fa-solid fa-envelope fa-lg"></i>
+							<i class="fa-solid fa-envelope fa-lg cv_icon"></i>
 							{{ en.contacts.text }}
 						</a>
 						<a class="info__contacts--item info__contacts--github" href="https://github.com/teohiho">
-							<i class="fa-brands fa-github fa-lg"></i>
+							<i class="fa-brands fa-github fa-lg cv_icon"></i>
 							{{ en.contacts.link }}
 						</a>
 					</div>
@@ -51,11 +51,11 @@
 									<div class="experience__detail">
 										<div class="experience__detail-item ">
 											<div class="experience__detail-item__time text-sm">
-												<i class="fa-solid fa-calendar-days"></i>
+												<i class="fa-solid fa-calendar-days cv_icon"></i>
 												{{ en.experience.date }}
 											</div>
 											<div class="experience__detail-item__location text-sm">
-												<i class="fa-solid fa-location-dot"></i>
+												<i class="fa-solid fa-location-dot cv_icon"></i>
 												{{ en.experience.location }}
 											</div>
 											<div style="clear:both;"></div>

@@ -24208,6 +24208,30 @@ select {
 }
 .header__logo img {
   width: 35px;
+  cursor: pointer;
+}
+.header__logo:hover + .header__hide {
+  display: block;
+  color: black;
+  z-index: 999;
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  background-color: white;
+  border: 1px solid rgba(75, 75, 75, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo:hover + .header__hide img {
+  width: 260px;
+  height: 260px;
+}
+.header__hide {
+  display: none;
 }
 .header__lang {
   margin-right: 1rem;

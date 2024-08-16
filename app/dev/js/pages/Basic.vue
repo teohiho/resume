@@ -106,13 +106,21 @@
 									<li>
 										<span class="fw-b">Education</span>
 										<ul class="inside">
-											<li>{{ en.educations.educations[0].date }}: {{ en.educations.educations[0].text }}</li>
+											<li>
+												{{ en.educations.educations[0].date }} 
+												<span v-if="en.educations.educations[0].date != ''">: </span>
+												{{ en.educations.educations[0].text }}
+											</li>
 										</ul>
 									</li>
 									<li class="pt-10">
 										<span class="fw-b">Certificate</span>
 										<ul class="inside">
-											<li>{{ en.educations.certificates[0].date }}: {{ en.educations.certificates[0].text }}</li>
+											<li>
+												{{ en.educations.certificates[0].date }}
+												<span v-if="en.educations.certificates[0].date != ''">: </span>
+												{{ en.educations.certificates[0].text }}
+											</li>
 										</ul>
 									</li>
 								</ul>

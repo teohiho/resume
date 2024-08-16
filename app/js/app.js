@@ -17996,18 +17996,18 @@ var store = (0,vuex__WEBPACK_IMPORTED_MODULE_0__.createStore)({
         skills: "ASP.NET, SQL Server, Javascript, Vuejs, SCSS",
         educations: {
           educations: [{
-            date: "2015 - 2020",
+            date: "",
             text: "Danang University of Science and Technology"
           }],
           certificates: [{
-            date: "2022",
-            text: "Japanese-Language Proficiency Test N2 Certificate"
+            date: "",
+            text: "Japanese Upper-intermediate"
           }]
         },
         experience: {
           position: "Software Engineer",
           company: "Nihon System",
-          date: "2022 - Current",
+          date: "Current",
           location: "Japan",
           content: "<p class='pt-10'>Working for a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p><p>We create web app products, winforms applications that provide tools to meet customer needs such as in the logistics industry, order management, invoices...</p>",
           technology: "ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, SQLserver, HTML, SCSS, CSS"
@@ -18027,18 +18027,18 @@ var store = (0,vuex__WEBPACK_IMPORTED_MODULE_0__.createStore)({
         skills: "ASP.NET, SQL Server, Javascript, Vuejs, SCSS",
         educations: {
           educations: [{
-            date: "2015 - 2020",
+            date: "",
             text: "ダナン工科大学"
           }],
           certificates: [{
-            date: "2022",
-            text: "日本語能力試験N2"
+            date: "",
+            text: "日本語中上級"
           }]
         },
         experience: {
           position: "ソフトウェアエンジニア",
           company: "日本システム",
-          date: "2022 - 現在",
+          date: "現在",
           location: "日本",
           content: "<p class='pt-10'>Web アプリ製品でユーザーの問題を解決するテクノロジー ソリューションの提供を専門とする会社で働いています。同時に、この会社は独自の製品も作成しています。</p><p>私たちは、物流業界、注文管理、請求書などの顧客のニーズを満たすツールを提供する Web アプリ製品、WinForms アプリケーションを作成します...</p>",
           technology: "ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, SQLserver, HTML, SCSS, CSS"
@@ -18788,13 +18788,19 @@ var _hoisted_47 = {
   "class": "inside"
 };
 var _hoisted_48 = {
+  key: 0
+};
+var _hoisted_49 = {
   "class": "pt-10"
 };
-var _hoisted_49 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+var _hoisted_50 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "fw-b"
 }, "Certificate", -1 /* HOISTED */);
-var _hoisted_50 = {
+var _hoisted_51 = {
   "class": "inside"
+};
+var _hoisted_52 = {
+  key: 0
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <p>Selected Language: {{ selectedLanguage }}</p> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Appear"], {
@@ -18835,7 +18841,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [_hoisted_43];
     }),
     _: 1 /* STABLE */
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_45, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_46, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_47, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.educations.educations[0].date) + ": " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.educations.educations[0].text), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_48, [_hoisted_49, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_50, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.educations.certificates[0].date) + ": " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.educations.certificates[0].text), 1 /* TEXT */)])])])])])])])])]);
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_45, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_46, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_47, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.educations.educations[0].date) + " ", 1 /* TEXT */), $data.en.educations.educations[0].date != '' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_48, ": ")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.educations.educations[0].text), 1 /* TEXT */)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_49, [_hoisted_50, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_51, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.educations.certificates[0].date) + " ", 1 /* TEXT */), $data.en.educations.certificates[0].date != '' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_52, ": ")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.en.educations.certificates[0].text), 1 /* TEXT */)])])])])])])])])])]);
 }
 
 /***/ }),

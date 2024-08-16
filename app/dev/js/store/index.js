@@ -99,21 +99,21 @@ const store = createStore({
           educations: {
             educations: [
               {
-                date: "2015 - 2020",
+                date: "",
                 text: "Danang University of Science and Technology"
               }
             ],
             certificates: [
               {
-                date: "2022",
-                text: "Japanese-Language Proficiency Test N2 Certificate"
+                date: "",
+                text: "Japanese Upper-intermediate"
               },
             ]
           },
           experience: {
               position: "Software Engineer",
               company: "Nihon System",
-              date: "2022 - Current",
+              date: "Current",
               location: "Japan",
               content: "<p class='pt-10'>Working for a company specializing in providing technology solutions to solve user problems with web app products. At the same time, the company also creates its own products.</p><p>We create web app products, winforms applications that provide tools to meet customer needs such as in the logistics industry, order management, invoices...</p>",
               technology: "ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, SQLserver, HTML, SCSS, CSS"
@@ -138,21 +138,21 @@ const store = createStore({
           educations: {
             educations: [
               {
-                date: "2015 - 2020",
+                date: "",
                 text: "ダナン工科大学"
               }
             ],
             certificates: [
               {
-                date: "2022",
-                text: "日本語能力試験N2"
+                date: "",
+                text: "日本語中上級"
               },
             ]
           },
           experience: {
               position: "ソフトウェアエンジニア",
               company: "日本システム",
-              date: "2022 - 現在",
+              date: "現在",
               location: "日本",
               content: "<p class='pt-10'>Web アプリ製品でユーザーの問題を解決するテクノロジー ソリューションの提供を専門とする会社で働いています。同時に、この会社は独自の製品も作成しています。</p><p>私たちは、物流業界、注文管理、請求書などの顧客のニーズを満たすツールを提供する Web アプリ製品、WinForms アプリケーションを作成します...</p>",
               technology: "ASP.NET MVC, Vuejs, JavaScript, Knockoutjs, SQLserver, HTML, SCSS, CSS"

@@ -5,6 +5,10 @@
 				<div class="header__logo">
 					<img src="./../../../img/maruko_conan_border_icon.png" alt="teo-logo">
 				</div>
+				<div class="header__hide">
+					<img src="./../../../img/maruko_conan_border_icon.png" alt="teo-logo">
+					hello!
+				</div>
 			</div>
 			<div class="header__right">
 				<div class="header__lang">
